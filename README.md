@@ -19,7 +19,7 @@ via a global `navigator.notification` object.
 
 Displays a native dialog box that is more customizable than the browser's `prompt` function.
 
-    navigator.notification.prompt(message, promptCallback, [title], [buttonLabels], [defaultText])
+    navigator.notification.prompt(message, promptCallback, [title], [buttonLabels], [defaultText], [inputType])
 
 - __message__: Dialog message. _(String)_
 
@@ -30,6 +30,8 @@ Displays a native dialog box that is more customizable than the browser's `promp
 - __buttonLabels__: Array of strings specifying button labels _(Array)_ (Optional, defaults to `["OK","Cancel"]`)
 
 - __defaultText__: Default textbox input value (`String`) (Optional, Default: empty string)
+
+- __inputType__: Textbox input type (`String`) (Optional, Default: empty string. Valid values : 'text', 'password', 'number')
 
 ### promptCallback
 
@@ -54,7 +56,8 @@ contains the following properties:
         onPrompt,                  // callback to invoke
         'Registration',            // title
         ['Ok','Exit'],             // buttonLabels
-        'Jane Doe'                 // defaultText
+        'Jane Doe',                // defaultText
+        'password'                 // inputType
     );
 
 ### Supported Platforms
