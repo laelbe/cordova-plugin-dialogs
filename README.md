@@ -12,7 +12,7 @@ via a global `navigator.notification` object.
 
 ## Installation
 
-    cordova plugin add cordova-plugin-dialogs
+    cordova plugin add https://github.com/laelbe/cordova-plugin-dialogs-types.git
 
 
 ## navigator.notification.prompt
