@@ -6,8 +6,7 @@ description: Use native dialog UI elements
 
 # cordova-plugin-dialogs-types
 
-This plugin provides access to some native dialog UI elements
-via a global `navigator.notification` object.
+This plugin is exactly the same as "https://github.com/apache/cordova-plugin-dialogs" except `navigator.notification.prompt`.
 
 
 ## Installation
@@ -31,19 +30,9 @@ Displays a native dialog box that is more customizable than the browser's `promp
 
 - __defaultText__: Default textbox input value (`String`) (Optional, Default: empty string)
 
-- __inputType__: Textbox input type (`String`) (Optional, Default: empty string. Valid values : 'text', 'password', 'number')
-
-### promptCallback
-
-The `promptCallback` executes when the user presses one of the buttons
-in the prompt dialog box. The `results` object passed to the callback
-contains the following properties:
-
-- __buttonIndex__: The index of the pressed button. _(Number)_ Note that the index uses one-based indexing, so the value is `1`, `2`, `3`, etc.
+- __inputType__: Textbox input type (`String`) (Optional, Default: 'text'. Valid values : 'text', 'password', 'number')
 
 
-
-- __input1__: The text entered in the prompt dialog box. _(String)_
 
 ### Example
 
@@ -59,22 +48,5 @@ contains the following properties:
         'Jane Doe',                // defaultText
         'password'                 // inputType
     );
-
-### Supported Platforms
-
-- Android
-- Browser
-- iOS
-- Windows
-
-### Android Quirks
-
-- Android supports a maximum of three buttons, and ignores any more than that.
-
-- On Android 3.0 and later, buttons are displayed in reverse order for devices that use the Holo theme.
-
-### Windows Quirks
-
-- On Windows prompt dialog is html-based due to lack of such native api.
 
 
