@@ -1,8 +1,3 @@
----
-title: Dialogs
-description: Use native dialog UI elements
----
-
 
 # cordova-plugin-dialogs-types
 
@@ -48,5 +43,15 @@ Displays a native dialog box that is more customizable than the browser's `promp
         'Jane Doe',                // defaultText
         'password'                 // inputType
     );
+
+
+### Preview
+
+#### IOS
+![IOS Preview](https://github.com/laelbe/cordova-plugin-dialogs-types/blob/master/doc/demo-ios.gif?raw=true)
+
+#### Android
+![Android Preview](https://github.com/laelbe/cordova-plugin-dialogs-types/blob/master/doc/demo-android.gif?raw=true)
+
 
 
