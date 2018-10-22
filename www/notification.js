@@ -78,7 +78,7 @@ module.exports = {
      * @param {String} title                Title of the dialog (default: "Prompt")
      * @param {Array} buttonLabels          Array of strings for the button labels (default: ["OK","Cancel"])
      * @param {String} defaultText          Textbox input value (default: empty string)
-     * @param {String} inputType            Textbox input typr (default: empty string)
+     * @param {String} inputType            Textbox input type (default: empty string)
      */
     prompt: function (message, resultCallback, title, buttonLabels, defaultText, inputType) {
         var _message = (typeof message === 'string' ? message : JSON.stringify(message));
